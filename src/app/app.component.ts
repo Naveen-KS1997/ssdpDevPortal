@@ -16,7 +16,7 @@ export class AppComponent {
   title = 'ssdpDevPortal';
 
    features = [
-    { title: 'Trip Report', description: 'Track travel details and routes.', icon: 'assets/icons/trip.png' },
+    { title: 'Trip Report', description: 'Track travel details and routes - Describe Trips of a vehicle.', icon: 'assets/icons/trip.png' },
     { title: 'Eco Coaching', description: 'Helps improve driving habits.', icon: 'assets/icons/eco.png' },
     { title: 'Send destination', description: 'Send GPS data to car.', icon: 'assets/icons/destination.png' },
     { title: 'Calendar Integration', description: 'Link calendar events to trips.', icon: 'assets/icons/calendar.png' },
