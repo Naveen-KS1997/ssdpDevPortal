@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  text-align: center;
+  padding-bottom: 100px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.intro {
+  padding: 2rem;
+
+  .tabs {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid #ccc;
+
+    span {
+      cursor: pointer;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    .active {
+      border-color: red;
+      font-weight: bold;
+    }
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}

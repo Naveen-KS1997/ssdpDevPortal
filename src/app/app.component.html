@@ -1,0 +1,31 @@
+<div class="page-container">
+<app-top-nav></app-top-nav>
+
+
+<section class="hero">
+  <img src="assets/icons/alfa-parts_cta_fullsize.png" alt="Banner" />
+  <h2>the mechanics of emotions</h2>
+
+
+<section class="intro">
+  <h3>Discover the features available</h3>
+
+  <div class="tabs">
+    <span *ngFor="let tab of tabs; let i = index"
+          [class.active]="activeTab === i"
+          (click)="activeTab = i">
+      {{ tab }}
+    </span>
+  </div>
+</section>
+<section class="cards">
+  <app-feature-card *ngFor="let f of features"
+                    [title]="f.title"
+                    [description]="f.description"
+                    [icon]="f.icon">
+  </app-feature-card>
+</section>
+<app-bottom-nav></app-bottom-nav>
+<router-outlet />
+</section>
+</div>
